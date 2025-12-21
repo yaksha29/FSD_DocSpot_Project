@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Cards</title>
+
+  <style>
+
+   
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+    }
+
+    .navbar {
+      width: 100%;
+      background: #222e3c;
+      color: #fff;
+      padding: 16px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar-content {
+      width: 90%;
+      max-width: 1200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .navbar-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .navbar-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .navbar-links a:hover {
+      color: #f2c94c;
+    }
+
+    .hero {
+      background: url("banner.jpg") center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 10px black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 6px;
+    }
+
+  
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1.section-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card-img {
+      width: 240px;
+      height: 340px;
+      object-fit: cover;
+      margin: auto;
+      display: block;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 4px 0;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .footer {
+      text-align: center;
+      background: #222e3c;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+
+ 
+  <nav class="navbar">
+    <div class="navbar-content">
+      <div class="navbar-logo">Anime Cards</div>
+      <div class="navbar-links">
+        <a href="#">Home</a>
+        <a href="#">Characters</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+ 
+
+  <div class="hero">
+    <h1>Welcome to My World</h1>
+    <p>Explore amazing characters below</p>
+  </div>
+
+  
+  <div class="container">
+    <h1 class="section-title">Characters</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="klein.jpg" class="card-img">
+        <h2 class="card-title">Klein</h2>
+        <p class="card-text">The Fool</p>
+      </div>
+
+      <div class="card">
+        <img src="senku.jpg" class="card-img">
+        <h2 class="card-title">Senku</h2>
+        <p class="card-text">Dr. Stone</p>
+      </div>
+
+      <div class="card">
+        <img src="sung.jpg" class="card-img">
+        <h2 class="card-title">Jinwoo</h2>
+        <p class="card-text">ARISE</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2025 Anime Cards • All Rights Reserved
+  </div>
+
+</body>
+</html>

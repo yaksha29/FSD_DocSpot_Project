@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 Cards Layout</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Characters</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="vin.jpg" class="card-img">
+        <h2 class="card-title">Thorfinn</h2>
+        <p class="card-text">vinland</p>
+      </div>
+
+      <div class="card">
+        <img src="ichigo.jpg" class="card-img">
+        <h2 class="card-title">Ichigo</h2>
+        <p class="card-text">bankai</p>
+      </div>
+
+      <div class="card">
+        <img src="klein.jpg" class="card-img">
+        <h2 class="card-title">klien</h2>
+        <p class="card-text">The Fool</p>
+      </div>
+
+      <div class="card">
+        <img src="naruto.jpg" class="card-img">
+        <h2 class="card-title">naruto</h2>
+        <p class="card-text">Soft knitted winter sweater.</p>
+      </div>
+
+      <div class="card">
+        <img src="senku1.jpg" class="card-img">
+        <h2 class="card-title">Senku</h2>
+        <p class="card-text">Dr. stone</p>
+      </div>
+
+      <div class="card">
+        <img src="sung.jpg" class="card-img">
+        <h2 class="card-title">jinwoo</h2>
+        <p class="card-text">ARISE</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
